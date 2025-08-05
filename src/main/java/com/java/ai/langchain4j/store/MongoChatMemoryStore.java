@@ -10,6 +10,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
+import org.springframework.stereotype.Component;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -23,6 +24,7 @@ import java.util.List;
  * @Create 2025/8/5 16:09
  * @Version 1.0
  */
+@Component
 public class MongoChatMemoryStore implements ChatMemoryStore {
     @Autowired
     private MongoTemplate mongoTemplate;
