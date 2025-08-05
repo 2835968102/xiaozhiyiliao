@@ -1,7 +1,7 @@
 package com.java.ai.langchain4j;
 
+import com.java.ai.langchain4j.assistant.Assistant;
 import com.java.ai.langchain4j.assistant.SeparateChatAssistant;
-import com.java.ai.langchain4j.config.MemoryChatAssistantConfig;
 import dev.langchain4j.community.model.dashscope.QwenChatModel;
 import dev.langchain4j.data.message.AiMessage;
 import dev.langchain4j.data.message.UserMessage;
@@ -11,7 +11,6 @@ import dev.langchain4j.service.AiServices;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import com.java.ai.langchain4j.assistant.Assistant;
 
 import java.util.Arrays;
 
@@ -87,8 +86,7 @@ public class ChatMemoryTest {
 
     }
 
-    @
-            Autowired
+    @Autowired
     private SeparateChatAssistant separateChatAssistant;
     @Test
     public void testChatMemory5() {
