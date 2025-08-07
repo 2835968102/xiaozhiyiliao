@@ -17,6 +17,14 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 @EnableConfigurationProperties
 public class XiaozhiApp {
     public static void main(String[] args) {
+        // 驱动加载测试
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("MySQL驱动加载成功");
+        } catch (Exception e) {
+            System.err.println("MySQL驱动加载失败：");
+            e.printStackTrace();
+        }
         SpringApplication.run(XiaozhiApp.class, args);
     }
 }
