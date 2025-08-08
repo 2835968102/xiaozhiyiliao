@@ -38,7 +38,9 @@ langchain4j:
       embedding-model:
         api-key: ${DASH_SCOPE_API_KEY}
         model-name: text-embedding-v3
-
+      streaming-chat-model:
+        api-key: ${DASH_SCOPE_API_KEY}
+        model-name: qwen-plus
 
 # 启用日志debug级别
 logging:
