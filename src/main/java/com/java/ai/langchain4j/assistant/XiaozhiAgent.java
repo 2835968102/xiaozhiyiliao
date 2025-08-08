@@ -20,7 +20,7 @@ import dev.langchain4j.service.spring.AiServiceWiringMode;
         chatModel = "qwenChatModel",
         chatMemoryProvider = "chatMemoryProviderXiaozhi",
         tools = "appointmentTools",
-        contentRetriever = "contentRetrieverXiaozhi"
+        contentRetriever = "contentRetrieverXiaozhiPincone"
 )
 public interface XiaozhiAgent {
 
