@@ -16,3 +16,14 @@ mongonDB存储聊天记录
 DASH_SCOPE_API_KEY https://help.aliyun.com/zh/model-studio/text-embedding-synchronous-api?spm=a2c4g.11186623.help-menu-2400256.d_2_5_0.592672a3yMJDRq&scm=20140722.H_2712515._.OR_help-T_cn~zh-V_1
 PINECONE_API_KEY https://docs.pinecone.io/guides/get-started/quickstart
 需要自己在环境变量中设置
+
+前端部署
+安装nodejs
+配置阿里镜像下载依赖
+npm config set registry https://registry.npmmirror.com
+进入项目目录 
+cd xiaozhi-ui
+下载依赖
+npm i
+启动项目
+npm run dev
